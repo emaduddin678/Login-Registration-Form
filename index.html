@@ -29,13 +29,13 @@
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" id="emailin" placeholder="email" />
             </div>
             <div class="input-field">
               <i class="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" id="passwordin" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" id="login" value="Login" class="btn solid" />
 
             <p class="social-text">Or Sign in with social platforms..</p>
             <div class="social-media">
@@ -55,22 +55,37 @@
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                name="username"
+              />
             </div>
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="text" placeholder="Email" id="email" name="email" />
+              <input
+                type="text"
+                placeholder="Email"
+                id="emailup"
+                name="email"
+              />
             </div>
             <div class="input-field">
               <i class="fa-solid fa-lock"></i>
               <input
                 type="password"
+                id="passwordup"
                 placeholder="Password"
-                id="password"
                 name="password"
               />
             </div>
-            <input type="submit" value="Sign up" class="btn solid" />
+            <input
+              type="submit"
+              value="Sign up"
+              id="signup"
+              class="btn solid"
+            />
 
             <p class="social-text">Or Sign up with social platforms..</p>
             <div class="social-media">
@@ -122,8 +137,8 @@
         </div>
       </div>
     </div>
-    
-    
+
     <script src="main.js"></script>
   </body>
+  <script type="module" src="firebase.js"></script>
 </html>
